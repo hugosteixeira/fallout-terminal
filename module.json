@@ -1,0 +1,30 @@
+{
+  "id": "fallout-terminal",
+  "title": "Fallout Terminal Hacking",
+  "description": "Mini game de hack de terminais (estilo Fallout) para Foundry VTT, com desbloqueio/travamento de Journals para o jogador.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Your Name"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/module.mjs"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "socket": true,
+  "relationships": {
+    "systems": [
+      {
+        "id": "fallout",
+        "type": "system"
+      }
+    ]
+  }
+}

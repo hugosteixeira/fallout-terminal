@@ -1,0 +1,39 @@
+<section class="ft-terminal">
+	<header class="ft-terminal__header">
+		<div class="ft-terminal__brand">TERMINAL ACCESS PROTOCOL</div>
+		<div class="ft-terminal__prompt">ENTER PASSWORD NOW</div>
+		<div class="ft-terminal__attempts">
+			<span class="ft-terminal__attempts-label">{{attemptsLeft}} ATTEMPT(S) LEFT:</span>
+			<span class="ft-terminal__blocks">
+				{{#each attemptBlocks as |on|}}
+					<span class="ft-block {{#if on}}is-on{{/if}}"></span>
+				{{/each}}
+			</span>
+		</div>
+	</header>
+
+	{{#unless hasTarget}}
+		<div class="ft-terminal__notice">
+			<strong>Sem alvo.</strong> O GM precisa enviar uma solicitação de hack com um JournalEntry configurado.
+		</div>
+	{{/unless}}
+
+	<div class="ft-memdump">
+		<div class="ft-col">
+			{{#each leftLines as |line|}}
+				<div class="ft-line"><span class="ft-addr">{{line.addr}}</span> <span class="ft-text">{{{line.html}}}</span></div>
+			{{/each}}
+		</div>
+		<div class="ft-col">
+			{{#each rightLines as |line|}}
+				<div class="ft-line"><span class="ft-addr">{{line.addr}}</span> <span class="ft-text">{{{line.html}}}</span></div>
+			{{/each}}
+		</div>
+	</div>
+
+	<div class="ft-terminal__log">
+		{{#each log as |entry|}}
+			<div class="ft-terminal__logline">{{entry.text}}</div>
+		{{/each}}
+	</div>
+</section>

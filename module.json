@@ -4,7 +4,7 @@
   "description": "Mini game de hack de terminais (estilo Fallout) para Foundry VTT, com desbloqueio/travamento de Journals para o jogador.",
   "version": "0.1.0",
   "manifest": "https://github.com/hugosteixeira/fallout-terminal/releases/latest/download/module.json",
-  "download": "https://github.com/hugosteixeira/fallout-terminal/releases/1.0.0/module.zip",
+  "download": "https://github.com/hugosteixeira/fallout-terminal/releases/download/1.0.0/module.zip",
   "authors": [
     {
       "name": "Hugo Teixeira"
